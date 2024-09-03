@@ -1,0 +1,19 @@
+Descriptor:
+  Name: Get VPN API IP Address Information
+  DisplayName: Get VPN API IP Address Information
+  Description: Get detailed information from VPN API about an IP Address.
+  #Examples
+  #Can you summarize the VPN API information for the IP 185.220.101.140?
+  #Can you summarize the IP address information from VPN API for the IP 75.156.61.64?
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+    Type: APIKey
+    Key: key
+    Location: QueryParams
+    AuthScheme: ''
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/SCStelz/CopilotForSecurity/main/CustomPlugIns/API-GetShodanIP/OpenAPI/API-GetShodanIP-OAPI.yaml
